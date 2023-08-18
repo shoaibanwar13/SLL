@@ -18,6 +18,8 @@ Including another URLconf
 from django.urls import path
 from CommerceApp.views import frontpage, shop, signup,product,add_to_cart,checkout,contact,Thankyou,Reviews,feedback,cart,myaccount,edit_account,hx_menu_cart,update_cart,hx_cart_total,start_order,success,fail
 from django.contrib.auth import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('',frontpage,name='frontpage'),
